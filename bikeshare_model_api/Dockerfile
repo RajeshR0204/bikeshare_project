@@ -4,6 +4,9 @@ FROM python:3.10
 # copy application files
 ADD . .
 
+# WORK DIR
+WORKDIR /bikeshare_model_api
+
 # update pip
 RUN pip install --upgrade pip
 
